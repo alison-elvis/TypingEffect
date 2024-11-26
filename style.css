@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+  color: #00ff00;
+}
+
+h1 {
+  width: 12ch;
+  border-right: solid 2px;
+  font-family: Courier New;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(12), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-effect-link {
+  display: block;
+  text-decoration: none;
+  width: 19ch;
+  border-right: solid 2px;
+  font-family: Courier New;
+  font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-link 7s steps(19), blink-cursor 0.5s step-end infinite alternate;
+  color: #22f4fd;
+  margin-top: 1rem;
+  padding: 5px;
+}
+
+@keyframes typing-link {
+  from {
+    width: 0ch;
+  }
+}
+
+@keyframes blink-cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #111;
+  color: orangered;
+  border: none;
+  box-shadow: 0 0 5px orangered;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+dialog {
+  background-color: #111;
+}
